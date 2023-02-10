@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyASxXCBxoUjepULctgHLY6zrcpcqVXCMNc",
+  authDomain: "progremmo-blog.firebaseapp.com",
+  projectId: "progremmo-blog",
+  storageBucket: "progremmo-blog.appspot.com",
+  messagingSenderId: "450893466968",
+  appId: "1:450893466968:web:abfd9c6bbdb30ec007e92d"
+};
+
+const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
